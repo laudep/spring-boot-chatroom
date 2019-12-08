@@ -7,6 +7,7 @@ public class Message {
   private MessageType type;
   private String msg;
   private int onlineCount;
+
   public Message(String username, MessageType type, String msg, int onlineCount) {
     this.username = username;
     this.type = type;
