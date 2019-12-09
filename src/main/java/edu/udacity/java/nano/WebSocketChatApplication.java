@@ -20,7 +20,7 @@ public class WebSocketChatApplication {
   /** Login Page */
   @GetMapping("/")
   public ModelAndView login() {
-    return new ModelAndView("/login");
+    return new ModelAndView("login");
   }
 
   /** Chatroom Page */
@@ -36,7 +36,7 @@ public class WebSocketChatApplication {
             + request.getContextPath()
             + "/chat";
 
-    ModelAndView modelAndView = new ModelAndView("/chat");
+    ModelAndView modelAndView = new ModelAndView("chat");
 
     modelAndView.addObject("username", username);
     modelAndView.addObject("webSocketUrl", wsURL);
